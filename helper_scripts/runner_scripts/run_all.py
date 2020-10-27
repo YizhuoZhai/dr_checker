@@ -71,6 +71,12 @@ def main():
     utils_dir = os.path.join(utils_dir, "../llvm_analysis")
     ana_helpers = os.path.join(utils_dir, "AnalysisHelpers")
     passes_dir = os.path.join(utils_dir, "MainAnalysisPasses/build_dir")
+
+
+    print "utils_dir: "+utils_dir
+    print "ana_helpers:" + ana_helpers
+    print "passes_dir: " + passes_dir
+
     # check for correct usage.
     if parsed_args.llvm_bc_out is None:
         usage()
